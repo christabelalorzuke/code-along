@@ -32,14 +32,9 @@ function TaskManager() {
         <div className='h-full bg-blue-600 justify-center items-center flex px-5 py-10'>
 
           <div className=' max-w-xl px-5 py-10 bg-white rounded-xl max-h-[500px]'>
-          
-             
-          
-         
-       
 
-            <form 
-              
+
+            <form               
               className="w-full space-x-5 flex justify-between mb-10"
               onSubmit={handleSubmit}
             >
@@ -58,12 +53,12 @@ function TaskManager() {
                     Add
               </button>
           </form>
-                <div className='space-y-2 overflow-y-auto h-56'>
+            <div className='space-y-2 overflow-y-auto h-56'>
                   {
                     tasks.map((task) => (
                       <TaskItem task={task} handleDelete={handleDelete} />))
                   }
-        </div>      
+             </div>      
       </div>
     </div>
     </div>

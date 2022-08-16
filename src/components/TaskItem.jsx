@@ -9,8 +9,8 @@ function TaskItem({task,handleDelete}){
          className='bg-blue-700 p-2 rounded-md'
          onClick={()=>handleDelete(task)}>
             <TrashIcon height={24} color="white"/>
-            </button>
-        </div>
+        </button>
+</div>
       
        )
 }
