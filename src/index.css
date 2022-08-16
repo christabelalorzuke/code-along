@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #sunset{
-    background-image: url('./assets/Sunset.jpg');
-    width: 50rem;
-    height: 10rem;
-
-} */
 @layer components {
     .form-label{
        
