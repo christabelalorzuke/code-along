@@ -1,6 +1,8 @@
 // import Header from "./components/Header";
 // import {Button1 ,Button2 , Button3} from "./components/Button";
 // import { Image } from "./components/image";
+import ProductList from "./components/ProductList";
+
 
 // function App() {
 //       return (         
@@ -22,10 +24,12 @@
 // import Navbar from "./components/Navbar";
 // import Navitem from "./components/Navitem";
 // import Practice from "./components/Practice";
-import TaskManager from "./components/TaskManager"
+// import TaskManager from "./components/TaskManager"
 function App (){
 return(
     <div>
+        <ProductList/>
+        
         {/* <Practice/> */}
         {/* <Navitem/>
         <Navbar/>
@@ -37,7 +41,7 @@ return(
         <Button label="Help"/> */}
         
         {/* <Image/> */}
-        <TaskManager/>
+        {/* <TaskManager/> */}
 
     </div>
 )
