@@ -24,7 +24,7 @@ import ProductList from "./components/ProductList";
 // import Navbar from "./components/Navbar";
 // import Navitem from "./components/Navitem";
 // import Practice from "./components/Practice";
-// import TaskManager from "./components/TaskManager"
+import TaskManager from "./components/TaskManager"
 function App (){
 return(
     <div>
