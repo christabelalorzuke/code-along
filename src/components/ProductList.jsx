@@ -25,12 +25,20 @@ function ProductList() {
   if (error) return <p>{error}</p>;
 
   return (
+    
+    
     <div className="flex flex-wrap gap-10 justify-center pt-10">
+      <div className="text-white">
+        <h1>
+          our products
+        </h1>
+      </div>
       <Spinner />
       {data.map((data) => (
         <Product product={data} />
       ))}{" "}
     </div>
+
   );
 }
 
