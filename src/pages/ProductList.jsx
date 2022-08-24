@@ -1,10 +1,9 @@
 import React from "react";
-import useAxios from "./hook.js/useAxios";
-import Product from "./Product";
-import Spinner from "./Spinner";
+import useAxios from "../components/hooks/useAxios";
+import Product from "../components/Product";
+import Spinner from "../components/Spinner";
 
 function ProductList() {
-  // const [products , setProducts ]= useState([])
   const { data, isLoading, error } = useAxios(
     "https://api.escuelajs.co/api/v1/products"
   );
@@ -25,20 +24,14 @@ function ProductList() {
   if (error) return <p>{error}</p>;
 
   return (
-    
-    
     <div className="flex flex-wrap gap-10 justify-center pt-10">
       <div className="text-white">
-        <h1>
-          our products
-        </h1>
+        <h1>our products</h1>
       </div>
-      <Spinner />
-      {data.map((data) => (
+      {data?.map((data) => (
         <Product product={data} />
       ))}{" "}
     </div>
-
   );
 }
 

@@ -3,8 +3,7 @@ import { TrashIcon } from "@heroicons/react/outline";
 
 function TaskItem({ task, handleDelete }) {
   return (
-    <div className="flex items-center justify-between bg-teal-100 border-2 border-gray-300 rounded-md ">
-      
+    <div className="flex items-center justify-between bg-teal-100 border-2 border-gray-300 rounded-md ">     
       <div className="flex space-x-2 ">
         <input type="checkbox" name="" id="" checked={task.completed===true} onChange={()=>{}} />
         <div className="flex-1">{task.text}</div>
