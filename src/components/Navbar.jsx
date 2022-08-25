@@ -25,14 +25,14 @@ const links = [
 ];
 const Navbar = () => {
   return (
-    <div className="shadow-md py-4 bg-yellow-400 text-white">
+    <div className="shadow-md py-1 bg-yellow-6700  mb-1">
       <nav className="flex font-bold justify-between max-w-7xl mx-auto">
         <img
           src={ColorArt}
           alt=""
-          className="px-2 py-2 rounded-full object-fill h-20 w-30"
+          className="px-1 py-2  m-none rounded-full object-fill h-20 w-20 shadow-md"
         />
-        <ul className="flex gap-5 ">
+        <ul className="flex gap-5 mt-6 ml-2 ">
           {links.map((link, index) => (
             <NavItem key={index} label={link.label} to={link.to} />
           ))}

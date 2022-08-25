@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import useAxios from "./hooks/useAxios";
+import useAxios from "../hooks/useAxios";
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -15,7 +15,6 @@ const ProductDetail = () => {
               <img classNmae="w-40" key={index} src={image} alt="" />
             ))}
           </div>
-          {/* {productId} */}
         </div>
         <div className="">
             hello

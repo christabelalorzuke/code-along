@@ -5,14 +5,16 @@ const Product = ({ product }) => {
   return (
     <div className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="snap-center flex justify-center item-center rounded-lg">
+        <div className="h-72 overflow-hidden "> 
         <a href="m">
-          <img
-            className="p-4 rounded-t-lg"
-            src={product.category.image}
-            alt=""
-          />
-        </a>
-      </div>
+            <img
+              className="p-4 rounded-t-lg"
+              src={product.image}
+              alt=""
+            />
+          </a>
+        </div>
+        </div>
 
       <div className="px-5 pb-5 item-center justify-center m-4">
         <a href="m">
@@ -22,7 +24,7 @@ const Product = ({ product }) => {
         </a>
         <div className="flex items-center mt-2.5 mb-2 text-white">
           {/* <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3"> */}
-          {product.description}
+          {product.description.substring(0 , 150)}
           {/* </span> */}
         </div>
         <div className="flex justify-between items-center">
